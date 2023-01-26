@@ -1,0 +1,261 @@
+/* this is the full webpage */
+.body {
+  display: flex;
+  background-image: url("./assets/Pm.png");
+  background-size: cover;
+  gap: 50px;
+  padding: 150px 0px;
+}
+.bodyCreative {
+  display: flex;
+  background-image: url("./assets/2.png");
+  background-size: cover;
+  gap: 50px;
+  padding: 150px 0px;
+}
+
+.bodyDev {
+  display: flex;
+  background-image: url("./assets/Developer.png");
+  background-size: cover;
+  gap: 50px;
+  padding: 150px 0px;
+}
+
+/* this is a invisible box around form-body (whole white section) which holds the icons in place. */
+.inner-body {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+/* this is the whole white section of the page, it holds a card inside it */
+.form-body {
+  color: black;
+  width: 500px;
+  border-radius: 7px;
+}
+
+/* custom css classes to minimize the code in form.js and moved them here */
+.custom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-bg {
+  background-color: rgb(220, 220, 220);
+  margin: 3px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.card {
+  width: 95%;
+}
+
+/* media query for small screen */
+@media only screen and (max-width: 600px) {
+  /* this is a invisible box around form-body (whole white section) which holds the icons in place. */
+  .inner-body {
+    display: flex;
+    width: 350px;
+    height: 600px;
+  }
+  /* this is the whole white section of the page, it holds a card inside it */
+  .form-body {
+    width: 250px;
+    height: 600px;
+  }
+  /* this is the actual card inside form-body which contains all the input fields inside it */
+  .card {
+    width: 95%;
+  }
+}
+
+/* media query for mid size screen */
+@media (min-width: 601px) and (max-width: 1000px) {
+  /* this is a invisible box around form-body (whole white section) which holds the icons in place. */
+  .inner-body {
+    display: flex;
+    width: 350px;
+    height: 600px;
+  }
+  /* this is the whole white section of the page, it holds a card inside it */
+  .form-body {
+    width: 250px;
+    height: 600px;
+  }
+  /* this is the actual card inside form-body which contains all the input fields inside it */
+  .card {
+    width: 95%;
+  }
+}
+
+.cat {
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(250, 213, 88);
+  border-radius: 9px;
+  padding: 10px;
+  /* font-size: large; */
+  font-size: xx-large;
+}
+
+.pro {
+  font-family: sans-serif;
+  color: slateblue;
+  font-size: xx-large;
+}
+
+.button {
+  font-family: sans-serif;
+  color: purple;
+  background-color: skyblue;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+  width: 29%;
+  border-color: aliceblue;
+  font-size: large;
+}
+
+/* this is the form.css file */
+
+/* icons /* every icon with their animation */
+/* image proparty and animation presets */
+#img1 {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* actual animation of the image */
+@keyframes img1 {
+  0% {
+    top: 50px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+/* image proparty and animation presets */
+#img2 {
+  position: absolute;
+  top: 300px;
+  right: 00px;
+  z-index: 999;
+  width: 100px;
+  animation-name: img2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* actual animation of the image */
+@keyframes img2 {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: 310px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+/* image proparty and animation presets */
+#img3 {
+  position: absolute;
+  top: 600px;
+  right: 0px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* actual animation of the image */
+@keyframes img3 {
+  0% {
+    top: 600px;
+  }
+  50% {
+    top: 590px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+/* image proparty and animation presets */
+#img4 {
+  position: absolute;
+  bottom: 300px;
+  left: 10px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* actual animation of the image */
+@keyframes img4 {
+  0% {
+    bottom: 300px;
+  }
+  50% {
+    bottom: 310px;
+  }
+  100% {
+    bottom: 300px;
+  }
+}
+/* image proparty and animation presets */
+#img5 {
+  position: absolute;
+  bottom: 600px;
+  left: 10px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img5;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* actual animation of the image */
+@keyframes img5 {
+  0% {
+    bottom: 600px;
+  }
+  50% {
+    bottom: 590px;
+  }
+  100% {
+    bottom: 600px;
+  }
+}
+/* image proparty and animation presets */
+#img6 {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  z-index: 999;
+  width: 120px;
+  animation-name: img6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* actual animation of the image */
+@keyframes img6 {
+  0% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 110px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
