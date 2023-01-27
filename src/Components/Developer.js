@@ -42,7 +42,7 @@ const Developer = () => {
 
               <p className="pro">{prompt}</p>
               <button className="button" onClick={handleClick}>
-                🖥️ Generate
+                🖥️
               </button>
             </div>
           </section>

@@ -1,14 +1,14 @@
 /* this is the full webpage */
 .body {
   display: flex;
-  background-image: url("./assets/Pm.png");
+  background-image: url("./assets/pm1.png");
   background-size: cover;
   gap: 50px;
   padding: 150px 0px;
 }
 .bodyCreative {
   display: flex;
-  background-image: url("./assets/2.png");
+  background-image: url("./assets/co1.png");
   background-size: cover;
   gap: 50px;
   padding: 150px 0px;
@@ -16,7 +16,7 @@
 
 .bodyDev {
   display: flex;
-  background-image: url("./assets/Developer.png");
+  background-image: url("./assets/d1.png");
   background-size: cover;
   gap: 50px;
   padding: 150px 0px;
